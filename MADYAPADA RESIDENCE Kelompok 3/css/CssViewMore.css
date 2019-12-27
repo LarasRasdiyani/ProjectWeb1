@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+}
+
+/*Bagian Clickbar*/
+.clickbar{
+  width: 900px auto;
+  margin: 0;
+  text-align: left;
+  padding: 10px 30px;
+  background-color: transparent;
+  margin-bottom: 5px;
+}
+
+.clickbar ul{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #09b1ec;
+}
+
+.clickbar ul li{
+  display: inline;
+  list-style-type: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.clickbar ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+}
+
+.clickbar ul li a:hover{
+  background-color: white;
+  color: black ;
+}
+
+.right {
+  float: right;
+}/*Akhir Clickbar*/
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .open-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.25s;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+}
+
+.container .open-button:hover {
+  background-color: #46bee5;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid #46bee5;
+}
+
+.form-container h2{
+  color: #46bee5;
+  text-transform: uppercase;
+  font-weight: 750;
+}
+
+.form-container hr{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.form-container input[type=text]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #46bee5;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.form-container input[type=text]:focus{
+  width: 240px;
+  border-color: #01f4d2;
+}
+
+.form-container .btn {
+  background-color: #46bee5;
+  color: black;
+  padding: 15px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 30%;
+  margin-bottom:10px;
+}
+
+.form-container .cancel {
+  background-color: ##46bee5;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/*Ini untuk pop up buy terimakasih*/
+.main {
+  width: 800px;
+  height: 600px;
+  margin: 50px auto;
+}
+.panel {
+  background-color: #444;
+  height: 34px;
+  padding: 10px;
+}
+.panel a#buy_pop, .panel a#join_pop {
+  background-color: #46bee5;
+  color: black;
+  padding: 15px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 30%;
+  margin-bottom:10px;
+  border-radius: 10px;
+}
+
+a#buy_pop:hover, a#join_pop:hover {
+    border-color: black;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    cursor: default;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 1;
+
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+  background-color: #fff;
+  border: 3px solid #fff;
+  display: inline-block;
+  left: 50%;
+  opacity: 0;
+  padding: 15px;
+  position: fixed;
+  text-align: justify;
+  top: 40%;
+  visibility: hidden;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+  box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+  -webkit-transition: opacity .5s, top .5s;
+  transition: opacity .5s, top .5s;
+}
+
+.overlay:target+.popup {
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.close {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  top: -15px;
+  width: 30px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+.close:before {
+  color: rgba(255, 255, 255, 0.9);
+  content: "X";
+  font-size: 24px;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+}
+
+.close:hover {
+  background-color: rgba(64, 128, 128, 0.8);
+}
+
+.popup p, .popup div {
+  margin-bottom: 10px;
+}
+
+.popup label {
+  display: inline-block;
+  text-align: left;
+  width: 120px;
+}
+/* Akhir pop up buy terima kasih*/
+
+.Tipe60 hr{
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	margin-bottom: 25px;
+}
+
+.Kotak {
+  padding: 5px;
+  overflow: auto;
+  width: 65%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: justify;
+  text-indent: .3in;
+}
+
+.Kotak img{
+  margin-right: 18px;
+}
+
+.Kotak h1{
+  text-align: center;
+  margin: 8px;
+}
+
+.gambarkotak1 {
+  float: left;
+}
+
+.gambarkotak2 {
+  float: right;
+  margin-top: 60px;
+  margin-left: 8px;
+}

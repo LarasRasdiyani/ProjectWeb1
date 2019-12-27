@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.belakang{
+	background: url(../Gambar/Banner.png);
+	background-size: cover;
+	height: 800px;
+}
+
+/*Bagian Clickbar*/
+.clickbar{
+	width: 900px auto;
+	margin: 0;
+	text-align: left;
+	padding: 10px 30px;
+	background-color: transparent;
+	margin-bottom: 5px;
+}
+
+.clickbar ul{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background: #09b1ec;
+}
+
+.clickbar ul li{
+	display: inline;
+	list-style-type: none;
+	padding: 10px;
+	display: inline-block;
+}
+
+.clickbar ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 20px;
+}
+
+.clickbar ul li a:hover{
+	background-color: white;
+	color: black ;
+}
+
+.right {
+  float: right;
+}/*Akhir Clickbar*/
+
+#pisah{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 20px;
+
+}
+
+#inputmarketer{
+	width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 650px;
+	left: 750px;
+	transform: translate(-50%, -50%);
+	background: white;
+	text-align: center;
+	border-radius: 24px;
+	transition: 0.25s;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+}
+
+#inputmarketer hr{
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#inputmarketer h1{
+	color: #46bee5;
+	text-transform: uppercase;
+	font-weight: 750;
+}
+
+#inputmarketer input[type = "text"], #inputmarketer input[type = "password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #46bee5;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: black;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+#inputmarketer input[type = "text"]:focus, #inputmarketer input[type = "password"]:focus{
+	width: 280px;
+	border-color: #3fff45;
+}
+
+#input {
+	width: 300px;
+	padding: 10px;
+	overflow: auto;
+	background: white;
+	text-align: center;
+	border-radius: 24px;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+	margin: 5px auto;
+}
+
+#input hr{
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#input h1{
+	color: #46bee5;
+	text-transform: uppercase;
+	font-weight: 750;
+}
+
+#input input[type = "text"], #input input[type = "password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #46bee5;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: black;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+#input input[type = "text"]:focus, #input input[type = "password"]:focus{
+	width: 280px;
+	border-color: #3fff45;
+}
+
+.box .btn{
+  background-color: #46bee5;
+  color: black;
+  padding: 15px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 40%;
+  margin-bottom:10px;
+}
+
+.btn{
+  width: 100px;
+  background-color: #34b9e1;
+}
+
+/*Bagian Footer*/
+.footer{
+  background: #09b1ec;
+  color: white;
+  position: relative;
+  height: 220px;
+}
+
+/*Bagian About Us, Links, Contact Us di footer*/
+.footer-content{
+  height: 195px;
+  display: flex;
+}
+
+.footer-section{
+  flex: 1;
+  font-size: 14px;
+}
+
+/*About di footer*/
+#about{
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 100px;
+  width: 50%;
+}
+
+/*Links di footer*/
+#links ul a{
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/*Transisi links di footer*/
+#links ul a:hover{
+  transition: all .3s;
+  margin-left: 7px;
+}
+
+/*Contact Us di footer*/
+#contact{
+  padding-right: 20px;
+}
+
+/*Input text box*/
+.contact-input{
+  background: white;
+  color: #bebdbd;
+  margin-bottom: 10px;
+  line-height: 25px;
+  padding: 5px 10px;
+  border: none;
+  display: block;
+  width: 375px;
+  border-radius: 5px;
+  outline: none;
+}
+
+/*Tombol send*/
+.send-button{
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+  padding: 7px 15px;
+  background: white;
+  color: black;
+  margin-right: 25px;
+}
+
+/*Background di tombol saat diklik*/
+.send-button:hover{
+  background: #46bee5;
+  cursor: pointer;
+}

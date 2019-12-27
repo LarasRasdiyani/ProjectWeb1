@@ -1,0 +1,127 @@
+<html>
+<head>
+	<title>MADYAPADA RESIDENCE</title>
+	<link rel="stylesheet" type="text/css" href="css/CssConsumer.css">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<script src="js/threeMusketers.js"></script>
+</head>
+
+<body onload="consumer()">
+	<center>
+		<img src="Gambar/Logo.png" width="250px" height="130px">
+	</center>
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<div class="clickbar">
+		<ul>
+			<li><a href="Home.html"> Home </a></li>
+			<li><a href="Consumer.html"> Consumer </a></li>
+			<li><a href="Investor.html"> Investor </a></li>
+			<li><a href="Marketer.html"> Marketer </a></li>
+			<li class="right"><a href="Login.html">Login</a></li>
+			<li class="right"><a href="SignUp.html">Sign Up</a></li>
+		</ul>
+	</div>
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+		<!-- Buat caption slide show dan lain lain -->
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 2</div>
+			<img src="Gambar/BannerConsumer.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 2</div>
+			<img src="Gambar/SosMed.png" style="width:100%">
+		</div>
+
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+	</div>
+	</div>
+
+	<div class="TipeRumah">
+		<center>
+			<h1>TIPE - TIPE RUMAH</h1>
+		</center>
+		<hr>
+		<p>
+			Pada saat anda hendak membeli sebuah rumah ataupun properti lain, terlebih dahulu pasti anda akan mencari
+			tahu seluk-beluknya bukan? Termasuk jenis tipe rumah dan harganya. Sebab apabila anda membeli sebuah rumah
+			pasti jenis tipe rumah akan sangat menentukan dan mempengaruhi nilai dari harga jual rumah tersebut.
+		</p>
+		<p>
+			Akan terlihat sangat lucu, apabila anda datang ke sebuah kantor agen properti yang anda sendiri belum tahu
+			betul model rumah seperti apa yang hendak mau Anda beli. Untuk itu sebaiknya anda memiliki pengetahuan
+			seputar properti. Minimal anda harus tahu macam atau jenis rumah dan kisaran harganya
+		</p>
+		<p>
+			Berikut MADYAPADA RESIDENCE memberi solusi bagi siapapun untuk dapat mengetahui lebih lanjut mengenai tipe
+			rumah 60 dan 70. Dimana tipe rumah ini adalah tipe rumah yang terbilang mewah dan elegant, akan sangat cocok
+			ditinggali bagi kalian yang mendambakan rumah idaman di kawasan yang strategis.
+		</p>
+	</div>
+
+	<div class="Kotak">
+		<img class="gambarkotak" src="Gambar/60.jpg" width="400" height="auto">
+		<h1>Tipe 60</h1>
+		<h3>Luas tanah : <span id="tanah1">70</span> m<sup>2</sup></h3>
+		<h3>Luas bangunan : 60 m<sup>2</sup></h3>
+		<h3>Kisaran harga : <span id="harga1">-</span> juta</h3>
+		<h3>Tersedia : <span id="available60">-</span></h3>
+		<a href="ViewMore60.html" style="margin-left: 400px;"><button class="btn">View More</button></a>
+	</div>
+
+	<div class="Kotak">
+		<img class="gambarkotak" src="Gambar/70.jpg" width="400" height="auto">
+		<h1>Tipe 70</h1>
+		<h3>Luas tanah : <span id="tanah2">80</span> m<sup>2</sup></h3>
+		<h3>Luas bangunan : 70 m<sup>2</sup></h3>
+		<h3>Kisaran harga : <span id="harga2">-</span> juta</h3>
+		<h3>Tersedia : <span id="available70">-</span></h3>
+		<a href="ViewMore70.html" style="margin-left: 400px;"><button class="btn">View More</button></a>
+	</div>
+
+	<!--Bagian Footer-->
+    <div class="footer" style="margin-top: 25px;">
+        <div class="footer-content">
+            <div class="footer-section" id="about">
+                <img src="Gambar/Logo.png" width="150px">
+                <p>MADYAPADA RESIDENCE</p>
+                <p>Copyright &copy; 2019 Madyapada Residence</p>
+            </div>
+            <div class="footer-section" id="links">
+                <h3>LINKS</h3>
+                <ul style="padding-left: 16px;">
+                    <a href="Investor.html"><li>Investor</li></a>
+                    <a href="Marketer.html"><li>Marketer</li></a>
+                    <a href="Consumer.html"><li>Consumer</li></a>
+                </ul>  
+            </div>
+            <div class="footer-section" id="contact">
+                <h3>CONTACT US</h3>
+                <form method="post">
+                    <input type="email" name="email" class="contact-input" placeholder="Enter your email address">
+                    <textarea name="message" class="contact-input" placeholder="Enter your message" style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+                    <button type="submit" class="send-button">
+                        <i class="fa fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/javascriptCarousel.js"></script>
+</html>

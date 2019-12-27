@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>MADYAPADA RESIDENCE</title>
+	<link rel="stylesheet" type="text/css" href="css/CssMarInv.css">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<script src="js/threeMusketers.js"></script>
+</head>
+
+<body onload="masterMarketer()">
+	<center>
+		<img src="Gambar/Logo.png" width="250px" height="130px">
+	</center>
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<div class="clickbar">
+		<ul>
+			<li><a href="Home.html"> Home </a></li>
+			<li><a href="Consumer.html"> Consumer </a></li>
+			<li><a href="Investor.html"> Investor </a></li>
+			<li><a href="Marketer.html"> Marketer </a></li>
+			<li class="right"><a href="Login.html">Login</a></li>
+			<li class="right"><a href="SignUp.html">Sign Up</a></li>
+		</ul>
+	</div>
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+
+
+	<div id="banner">
+		<div style="margin: auto; text-align: center;">
+			<img src="Gambar/Banner.png" width="100%" height="auto">
+		</div>
+	</div>
+
+	<div id="inputmarketer">
+		<h1>Hitung Keuntungan</h1>
+		<hr>
+		<p>Tersedia:
+			<input type="text" name="" placeholder="Rumah Tipe 1" required="">
+		</p>
+		<p>Tersedia:
+			<input type="text" name="" placeholder="Rumah Tipe 2" required="">
+		</p>
+		<button type="button" class="btn" onclick="marketer()">Hitung</button>
+	</div>
+
+	<!--Bagian Footer-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section" id="about">
+                <img src="Gambar/Logo.png" width="150px">
+                <p>MADYAPADA RESIDENCE</p>
+                <p>Copyright &copy; 2019 Madyapada Residence</p>
+            </div>
+            <div class="footer-section" id="links">
+                <h3>LINKS</h3>
+                <ul style="padding-left: 16px;">
+                    <a href="Investor.html"><li>Investor</li></a>
+                    <a href="Marketer.html"><li>Marketer</li></a>
+                    <a href="Consumer.html"><li>Consumer</li></a>
+                </ul>  
+            </div>
+            <div class="footer-section" id="contact">
+                <h3>CONTACT US</h3>
+                <form method="post">
+                    <input type="email" name="email" class="contact-input" placeholder="Enter your email address">
+                    <textarea name="message" class="contact-input" placeholder="Enter your message" style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+                    <button type="submit" class="send-button">
+                        <i class="fa fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

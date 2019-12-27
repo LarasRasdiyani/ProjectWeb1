@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MADYAPADA RESIDENCE</title>
+	<link rel="stylesheet" type="text/css" href="css/CssViewMore.css">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<script src="js/threeMusketers.js"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body onload="home70()">
+	<center>
+		<img src="Gambar/Logo.png" width="250px" height="130px">
+	</center>
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<div class="clickbar">
+		<ul>
+			<li><a href="Home.html"> Home </a></li>
+			<li><a href="Consumer.html"> Consumer </a></li>
+			<li><a href="Investor.html"> Investor </a></li>
+			<li><a href="Marketer.html"> Marketer </a></li>
+			<li class="right"><a href="login.html">Login</a></li>
+			<li class="right"><a href="SignUp.html">Sign Up</a></li>
+		</ul>
+	</div>
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<div>
+		<div class="Tipe60">
+			<center>
+				<h1>TIPE RUMAH 70</h1>
+			</center>
+			<hr>
+		</div>
+		<center>
+			<div class="container">
+				<img src="Gambar/Contoh70.jpg" alt="Snow" style="width:100%">
+				<button class="open-button" onclick="openForm()">Buy Now</button>
+				<div class="form-popup" id="myForm">
+					<form action="#" class="form-container">
+						<h2>Complete the form below to buy</h2>
+						<hr>
+						<input type="text" placeholder="Nama Lengkap" name="email" required>
+						<input type="text" placeholder="Email" name="email" required>
+						<input type="text" placeholder="No Handphone/Wa" name="email" required>
+						<button type="button" class="btn"><a href="#buy_form" id="buy_pop" style="text-decoration: none; color: black;">Buy</a>
+					    <a href="#x" class="overlay" id="buy_form"></a>
+		        					<div class="popup">
+						            <h2>Thank's for your order</h2>
+						            <p>We will contact you shortly</p>
+						            <a class="close" href="#close"></a>
+					    </button>
+						<button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+					</form>
+				</div>
+
+				<script>
+					function openForm() {
+						document.getElementById("myForm").style.display = "block";
+					}
+
+					function closeForm() {
+						document.getElementById("myForm").style.display = "none";
+					}
+				</script>
+
+			</div>
+		</center>
+
+		<div class="Kotak">
+			<img class="gambarkotak2" src="Gambar/Denah70Dualantai.jpg" width="400" height="auto">
+			<h1>Tipe 70</h1>
+			<p>Membangun rumah dengan denah rumah tipe 70 2 lantai , anda dapat membangun 3 buah kamar tidur atau lebih
+				, 2 kamar mandi , 1 kamar tamu ,1 ruang tamu, 1 ruang keluarga, 1 ruang makan serta 1 dapur.</p>
+			<p>Berikut spsesifikasi hunian tipe 70 dengan 2 lantai yang tersedia di MADYAPADA RESIDENCE :</p>
+			<h3>Luas tanah : <span id="tanah2">80</span> m<sup>2</sup></h3>
+			<h3>Luas bangunan : 70 m<sup>2</sup></h3>
+			<h3>Kisaran harga : <span id="harga2">-</span> juta</h3>
+			<h3>Tersedia : <span id="available70">-</span></h3>
+		</div>
+	</div>
+
+	<!--Bagian Footer-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section" id="about">
+                <img src="Gambar/Logo.png" width="150px">
+                <p>MADYAPADA RESIDENCE</p>
+                <p>Copyright &copy; 2019 Madyapada Residence</p>
+            </div>
+            <div class="footer-section" id="links">
+                <h3>LINKS</h3>
+                <ul style="padding-left: 16px;">
+                    <a href="Investor.html"><li>Investor</li></a>
+                    <a href="Marketer.html"><li>Marketer</li></a>
+                    <a href="Consumer.html"><li>Consumer</li></a>
+                </ul>  
+            </div>
+            <div class="footer-section" id="contact">
+                <h3>CONTACT US</h3>
+                <form method="post">
+                    <input type="email" name="email" class="contact-input" placeholder="Enter your email address">
+                    <textarea name="message" class="contact-input" placeholder="Enter your message" style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+                    <button type="submit" class="send-button">
+                        <i class="fa fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

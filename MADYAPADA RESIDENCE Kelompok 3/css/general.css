@@ -1,0 +1,117 @@
+/*Bagian Clickbar*/
+.clickbar{
+	width: 900px auto;
+	margin: 0;
+	text-align: left;
+	padding: 10px 30px;
+	background-color: transparent;
+	margin-bottom: 5px;
+}
+
+.clickbar ul{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background: #09b1ec;
+}
+
+.clickbar ul li{
+	display: inline;
+	list-style-type: none;
+	padding: 10px;
+	display: inline-block;
+}
+
+.clickbar ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 20px;
+}
+
+.clickbar ul li a:hover{
+	background-color: white;
+	color: black ;
+}
+
+.right {
+  float: right;
+}
+/*Akhir Clickbar*/
+
+/*Bagian Footer*/
+.footer{
+  background: #09b1ec;
+  color: white;
+  position: relative;
+  height: 220px;
+}
+
+/*Bagian About Us, Links, Contact Us di footer*/
+.footer-content{
+  height: 195px;
+  display: flex;
+}
+
+.footer-section{
+  flex: 1;
+  font-size: 14px;
+}
+
+/*About di footer*/
+#about{
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 100px;
+  width: 50%;
+}
+
+/*Links di footer*/
+#links ul a{
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/*Transisi links di footer*/
+#links ul a:hover{
+  transition: all .3s;
+  margin-left: 7px;
+}
+
+/*Contact Us di footer*/
+#contact{
+  padding-right: 20px;
+}
+
+/*Input text box*/
+.contact-input{
+  background: white;
+  color: #bebdbd;
+  margin-bottom: 10px;
+  line-height: 25px;
+  padding: 5px 10px;
+  border: none;
+  display: block;
+  width: 375px;
+  border-radius: 5px;
+  outline: none;
+}
+
+/*Tombol send*/
+.send-button{
+  border-radius: 5px;
+  border: 1px solid transparent;
+  outline: none;
+  padding: 7px 15px;
+  background: white;
+  color: black;
+  margin-right: 25px;
+}
+
+/*Background di tombol saat diklik*/
+.send-button:hover{
+  background: #46bee5;
+  cursor: pointer;
+}

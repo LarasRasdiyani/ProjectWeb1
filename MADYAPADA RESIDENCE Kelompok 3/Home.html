@@ -1,0 +1,136 @@
+<html>
+<head>
+	<title>MADYAPADA RESIDENCE</title>
+	<link rel="stylesheet" type="text/css" href="css/CssHome.css">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<script src="js/user.js"></script>
+</head>
+
+<body">
+	<center>
+		<img src="Gambar/Logo.png" width="250px" height="130px">
+	</center>
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<div class="clickbar">
+		<ul>
+			<li><a href="Home.html"> Home </a></li>
+			<li><a href="Consumer.html"> Consumer </a></li>
+			<li><a href="Investor.html"> Investor </a></li>
+			<li><a href="Marketer.html"> Marketer </a></li>
+			<span id="sayapKanan">
+				<!-- Bug di logout, masih belum bisa-->
+				<!--
+					<li class="right"><span id="Name"></span></li>
+					<li class="right"><button onclick="logout()">Logout</button></li>
+					-->
+				<li class="right"><a href="login.html">Login</a></li>
+				<li class="right"><a href="SignUp.html">Sign Up</a></li>
+			</span>
+		</ul>
+	</div>
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<hr style="margin-top: 5px; margin-bottom: 5px;">
+	<!-- Slideshow container -->
+	<div class="slideshow-container">
+
+		<!-- Buat caption slide show dan lain lain -->
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 4</div>
+			<img src="Gambar/BannerHome.png" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 4</div>
+			<img src="Gambar/TipeRumah.png" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 4</div>
+			<img src="Gambar/Owner.png" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 4</div>
+			<img src="Gambar/About.png" style="width:100%">
+		</div>
+
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+
+	<div class="KataKata">
+		<div class="kata">
+			<h1>Misi</h1>
+			Menjalankan kegiatan perusahaan dengan standar etika yang tinggi serta kejujuran dan integritas
+		</div>
+
+		<div class="kata">
+			<h1>Visi</h1>
+			Menjadi perumahan yang unggul dan tepercaya
+		</div>
+
+		<div class="kata">
+			<h1>Sejarah</h1>
+			Berdiri sejak tahun 2010
+		</div>
+
+		<div class="kata">
+			<h1>Pencapaian</h1>
+			Menjadi perumahan dengan penjualan terlaris di tahun 2018
+		</div>
+	</div>
+	<div class="video">
+		<center>
+			<h1>Watch Our Video</h1>
+			<hr>
+			<br />
+			<video width="1000px" height="70%" controls autoplay>
+				<source src="videobanner.mp4" type="video/mp4">
+			</video>
+		</center>
+	</div>
+
+	<!--Bagian Footer-->
+    <div class="footer" style="margin-top: 25px;">
+        <div class="footer-content">
+            <div class="footer-section" id="about">
+                <img src="Gambar/Logo.png" width="150px">
+                <p>MADYAPADA RESIDENCE</p>
+                <p>Copyright &copy; 2019 Madyapada Residence</p>
+            </div>
+            <div class="footer-section" id="links">
+                <h3>LINKS</h3>
+                <ul style="padding-left: 16px;">
+                    <a href="Investor.html"><li>Investor</li></a>
+                    <a href="Marketer.html"><li>Marketer</li></a>
+                    <a href="Consumer.html"><li>Consumer</li></a>
+                </ul>  
+            </div>
+            <div class="footer-section" id="contact">
+                <h3>CONTACT US</h3>
+                <form method="post">
+                    <input type="email" name="email" class="contact-input" placeholder="Enter your email address">
+                    <textarea name="message" class="contact-input" placeholder="Enter your message" style="font-family: Arial, Helvetica, sans-serif;"></textarea>
+                    <button type="submit" class="send-button">
+                        <i class="fa fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+	</body>
+	<script type="text/javascript" src="js/javascriptCarousel.js"></script>
+
+</html>

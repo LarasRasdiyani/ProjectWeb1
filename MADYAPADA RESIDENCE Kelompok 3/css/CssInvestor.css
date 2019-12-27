@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Bagian Clickbar*/
+.wrap .clickbar{
+	width: 900px auto;
+	margin: 0;
+	text-align: left;
+	padding: 10px 30px;
+	background-color: transparent;
+	margin-bottom: 5px;
+}
+
+.wrap .clickbar ul{
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background: #09b1ec;
+}
+
+.wrap .clickbar ul li{
+	display: inline;
+	list-style-type: none;
+	padding: 10px;
+	display: inline-block;
+}
+
+.wrap .clickbar ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 20px;
+}
+
+.wrap .clickbar ul li a:hover{
+	background-color: white;
+	color: black ;
+}
+
+.right {
+  float: right;
+}/*Akhir Clickbar*/
+
+#input{
+	width: 300px;
+	padding: 40px;
+	position: absolute;
+	top: 670px;
+	right: 100px;
+	transform: translate(-50%, -50%);
+	background: white;
+	text-align: center;
+	border-radius: 24px;
+	transition: 0.25s;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+}
+
+#input hr{
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#input h1{
+	color: #46bee5;
+	text-transform: uppercase;
+	font-weight: 750;
+}
+
+#input input[type = "text"], #input input[type = "password"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #46bee5;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: black;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+#input input[type = "text"]:focus, #input input[type = "password"]:focus{
+	width: 280px;
+	border-color: #3fff45;
+}
